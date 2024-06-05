@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-fachada-iii">
+        <li class="text">fachada III</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-fachada-01">
+        <li class="text">fachada 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-facahada">
+        <li class="text">facahada</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-cochera">
+        <li class="text">cochera</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-ingreso-a-la-propiedad">
+        <li class="text">ingreso a la propiedad</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-ingreso">
+        <li class="text">ingreso</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-acceso-a-escritorio-y-toilete-">
+        <li class="text">acceso a escritorio y toilete </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-pa">
+        <li class="text">PA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-livingo-comedor-01">
+        <li class="text">livingo comedor 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-living-comedor-02">
+        <li class="text">living comedor 02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-cocina">
+        <li class="text">Cocina</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-lavadero-">
+        <li class="text">lavadero </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-bao-habitacion-principal-">
+        <li class="text">baño habitacion principal </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-bao-pa">
+        <li class="text">Baño PA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-galeria">
+        <li class="text">galeria</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-habitacion-juegos">
+        <li class="text">Habitacion juegos</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-habitacion-nia">
+        <li class="text">habitacion niña</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-habitacion-principal-01">
+        <li class="text">habitacion principal 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-parque-ii">
+        <li class="text">parque II</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-parque">
+        <li class="text">parque</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-parrilla">
+        <li class="text">parrilla</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-terraza">
+        <li class="text">terraza</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-toilete">
+        <li class="text">Toilete</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
